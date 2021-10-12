@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    color: honeydew;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(158,75,249);
+    background: linear-gradient(90deg, rgba(158,75,249,1) 0%, rgba(63,94,251,1) 50%, rgba(165,74,249,1) 100%); 
+}
+
+a {
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.thumbnail {
+    display: block;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.keyframe {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.All {
+    margin-left: 3%;
+}
