@@ -77,6 +77,9 @@ li {
             'picture3 picture3 picture3';
     }
 
+    h2 {
+        text-align: auto;
+    }
 }
 
 .box {
