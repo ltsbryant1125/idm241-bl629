@@ -97,6 +97,18 @@ li {
     grid-area: picture3;
 }
 
+.thumbnail-4 {
+    grid-area: picture4;
+}
+
+.thumbnail-5 {
+    grid-area: picture5;
+}
+
+.thumbnail-6 {
+    grid-area: picture6;
+}
+
 @media only screen and (min-width: 768px) {
     .list {
         grid-template-areas:
@@ -108,7 +120,9 @@ li {
 
     .images {
         grid-template-areas: 
-            'picture1 picture2 picture3';
+            'picture1 picture2'
+            'picture3 picture4'
+            'picture5 picture6';
     }
 }
 
@@ -137,7 +151,10 @@ li {
         grid-template-areas: 
             'picture1 picture1 picture1'
             'picture2 picture2 picture2'
-            'picture3 picture3 picture3';
+            'picture3 picture3 picture3'
+            'picture4 picture4 picture4'
+            'picture5 picture5 picture5'
+            'picture6 picture6 picture6';
     }
 
     h2 {
@@ -183,9 +200,10 @@ li {
 
 img {
     height: 208px;
-    width: 416px;
+    width: 386px;
     position: relative;
     z-index: -2;
+    padding: 0 0 1rem;
 }
 
 .pic:hover {
@@ -238,7 +256,7 @@ img {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    justify-items:  center;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    justify-items: center;
     padding: 1rem;
 }
