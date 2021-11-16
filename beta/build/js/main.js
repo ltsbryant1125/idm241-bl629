@@ -1,34 +1,35 @@
-
-// test.addEventListener("mouseover", function(onmouseover){
     
-// });
-
-
-document.getElementById('img').innerHTML='';
-
+// var testDiv = document.getElementById('saints');
+// var secondDiv = document.getElementById('preview');
     
-    var testDiv = document.getElementById('saints');
-    testDiv.innerHTML = "<video class='pic' width='416' height='208' autoplay muted><source src='images/Video_Trailer.mp4' type='video/mp4'></video>";
-    document.getElementById('img').appendChild(testDiv);
-    
-// document.getElementById('img').addEventListener('mouseover', mouseOver);
-// document.getElementById('img').addEventListener('mouseout', mouseOut);
+document.getElementById('preview').addEventListener('mouseenter', swapImgWithVideo);
+document.getElementById('preview').addEventListener('mouseout', swapVideoWithImg);
 
-// function mouseOver() {
-    
-// }
+var gImgShowing = true;
 
 
+function swapImgWithVideo() {
+    console.log('swap image with video v7');
 
-// function mouseOut() {
-//     document.getElementById('saints').innerHTML='';
+   if(gImgShowing == true) {
+    document.getElementById('thumbnail').innerHTML="<video id='myVideo' width='416' height='208' src='images/Video_Trailer.mp4' autoplay></video>";
+    gImgShowing = false;
+   }
 
-//     var secondDiv = document.getElementById('img');
-//     secondDiv.innerHTML = "<img class='innerimg' src='images/test-image.jpeg' alt='The many saints of newark banner'>";
-//     document.getElementById('saints').appendChild(secondDiv);
-// }
+}
 
-document.getElementsByTagName('video')[0].onended = function() {
-    this.onload();
-    this.onplay();
-};
+function swapVideoWithImg() {
+    console.log('swap video with image v7');
+
+    if(gImgShowing == false) {
+        document.getElementById('thumbnail').innerHTML="<img src='images/test-image.jpeg' alt='The many saints of newark banner'>";
+        gImgShowing = true;
+    }
+
+}
+
+
+// document.getElementsByTagName('video')[0].onended = function() {
+//     this.onload();
+//     this.onplay();
+// };
