@@ -85,6 +85,18 @@ li {
     grid-area: Floop;
 }
 
+.arrow1 {
+    grid-area: arrow1;
+}
+
+.arrow2 {
+    grid-area: arrow2;
+}
+
+.arrow3 {
+    grid-area: arrow3;
+}
+
 .thumbnail-1 {
     grid-area: picture1;
 }
@@ -120,9 +132,9 @@ li {
 
     .images {
         grid-template-areas: 
-            'picture1 picture2'
-            'picture3 picture4'
-            'picture5 picture6';
+            'picture1 arrow1 picture2'
+            'picture3 arrow2 picture4'
+            'picture5 arrow3 picture6';
     }
 }
 
@@ -148,13 +160,29 @@ li {
     }
 
     .images {
+        justify-items: center;
         grid-template-areas: 
             'picture1 picture1 picture1'
             'picture2 picture2 picture2'
             'picture3 picture3 picture3'
             'picture4 picture4 picture4'
             'picture5 picture5 picture5'
-            'picture6 picture6 picture6';
+            'picture6 picture6 picture6'
+            'arrow1 arrow1 arrow1'
+            'arrow2 arrow2 arrow2'
+            'arrow3 arrow3 arrow3';
+    }
+
+    .arrow1 {
+        visibility: hidden;
+    }
+
+    .arrow2 {
+        visibility: hidden;
+    }
+
+    .arrow3 {
+        visibility: hidden;
     }
 
     h2 {
