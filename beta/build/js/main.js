@@ -12,7 +12,7 @@ function swapImgWithVideo() {
     console.log('swap image with video v7');
 
    if(gImgShowing == true) {
-    document.getElementById('thumbnail').innerHTML="<video id='myVideo' width='416' height='208' src='images/Video_Trailer.mp4' autoplay></video>";
+    document.getElementById('thumbnail').innerHTML="<video id='myVideo' width='416' height='208' src='images/New_Video416x206.mp4' autoplay></video>";
     gImgShowing = false;
    }
 

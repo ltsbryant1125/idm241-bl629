@@ -1,0 +1,385 @@
+html {
+    box-sizing: border-box;
+    color: honeydew;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(158,75,249);
+    background: linear-gradient(90deg, rgba(158,75,249,1) 0%, rgba(63,94,251,1) 50%, rgba(165,74,249,1) 100%); 
+}
+
+a {
+    color: white;
+}
+
+li {
+    font-size: 1rem;
+    text-align: left;
+    text-indent: 25px;
+    margin: 1em 0;
+}
+
+.btn1 {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    top: 10px;
+    left: 275px;
+    right: 10px;
+    opacity: 0;
+    z-index: 3;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+}
+
+.btn1 img {
+    height: 45px;
+    width: 45px;
+}
+
+.btn2 {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    right: 10px;
+    opacity: 0;
+    z-index: 3;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+}
+
+.btn2 img {
+    height: 45px;
+    width: 45px;
+}
+
+.btn3 {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    top: 10px;
+    left: 365px;
+    right: 10px;
+    opacity: 0;
+    z-index: 3;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+}
+
+.btn3 img {
+    height: 45px;
+    width: 45px;
+}
+
+.triggers {
+    grid-area: triggers;
+}
+
+.rules {
+    grid-area: rules;
+}
+
+.feedback {
+    grid-area: feedback;
+}
+
+.loops {
+    grid-area: loops;
+}
+
+.Strig {
+    grid-area: Strig;
+}
+
+.Srule {
+    grid-area: Srule;
+}
+
+.Sfeed {
+    grid-area: Sfeed;
+}
+
+.Sloop {
+    grid-area: Sloop;
+}
+
+.Ttrig {
+    grid-area: Ttrig;
+}
+
+.Trule {
+    grid-area: Trule;
+}
+
+.Tfeed {
+    grid-area: Tfeed;
+}
+
+.Tloop {
+    grid-area: Tloop;
+}
+
+.Ftrig {
+    grid-area: Ftrig;
+}
+
+.Frule {
+    grid-area: Frule;
+}
+
+.Ffeed {
+    grid-area: Ffeed;
+}
+
+.Floop {
+    grid-area: Floop;
+}
+
+@media only screen and (min-width: 768px) {
+    .list {
+        grid-template-areas:
+            'triggers rules feedback loops'
+            'Strig Srule Sfeed Sloop'
+            'Ttrig Trule Tfeed Tloop'
+            'Ftrig Frule Ffeed Floop';
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .list {
+        grid-template-areas:
+            'triggers triggers triggers'
+            'rules rules rules'
+            'feedback feedback feedback'
+            'loops loops loops'
+            'Strig Strig Strig'
+            'Srule Srule Srule'
+            'Sfeed Sfeed Sfeed'
+            'Sloop Sloop Sloop'
+            'Ttrig Ttrig Ttrig'
+            'Trule Trule Trule'
+            'Tfeed Tfeed Tfeed'
+            'Tloop Tloop Tloop'
+            'Ftrig Ftrig Ftrig'
+            'Frule Frule Frule'
+            'Ffeed Ffeed Ffeed'
+            'Floop Floop Floop';
+    }
+
+    h2 {
+        text-align: auto;
+    }
+}
+
+
+/* .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    justify-items: center;
+} */
+/* 
+.box a {
+    transition: transform .3s;
+    grid-column-start: 1;
+} */
+
+/* .pic {
+    height: 208px;
+    width: 416px;
+    position: relative;
+    color: white;
+} */
+
+.button {
+    width: 45px;
+    height: 45px;
+}
+
+/* .btn1 {
+    position: absolute;
+    top: 15px;
+    left: 318px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+}
+
+.btn2 {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    left: 365px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+}*/
+
+.img_description {
+    position: absolute;
+    top: 50px;
+    bottom: 110px;
+    left: 15px;
+    right: 10px;
+    color: #fff;
+    opacity: 0;
+
+    z-index: 3;
+
+    transition: opacity .2s, visibility .2s, transform .2s;
+} 
+
+.inner_text {
+    font-size: 12px;
+}
+
+/* img {
+    height: 208px;
+    width: 416px;
+    position: relative;
+    z-index: -1;
+} */
+
+/* video {
+    height: 208px;
+    width: 416px;
+} */
+
+/* #saints { */
+    /* position: absolute;
+    top: 8px; */
+    /* visibility: hidden;
+    opacity: 0; */
+/* } */
+
+/* .pic:hover #saints {
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* .pic:hover {
+    -webkit-box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+    -moz-box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+    box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+}
+
+.pic:hover .btn1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pic:hover .btn2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pic:hover .img_description {
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* .box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    /*-webkit-box-shadow: 0px 36px 79px -6px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 36px 79px -6px rgba(0,0,0,0.77);
+    box-shadow: 0px 36px 79px -6px rgba(0,0,0,0.77);
+} 
+
+/* .box img {
+    border-radius: 2px;
+} */
+
+.title {
+    text-align: center;
+}
+
+.All {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    justify-items: center;
+    padding: 5rem;
+}
+
+#content {
+    max-width: 15rem;
+}
+
+/* .images {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    justify-items:  center;
+    padding: 1rem;
+} */
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+    -moz-box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+    box-shadow: inset 0px -200px 42px -118px rgba(0,0,0,0.85);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+} 
+
+#disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    justify-items: center;
+}
+  
+#imgVidDisplay {
+    position: relative;
+    overflow: hidden;
+    grid-column-start: 1;
+    border-radius: 10px;
+}
+  
+#myThumbnail {
+    position: absolute;
+    top: 0pt;
+}
+
+button {
+    cursor: pointer;
+}
+  
