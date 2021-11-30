@@ -1,39 +1,3 @@
-    
-// var testDiv = document.getElementById('saints');
-// var secondDiv = document.getElementById('preview');
-    
-// document.getElementById('preview').addEventListener('mouseenter', swapImgWithVideo);
-// document.getElementById('preview').addEventListener('mouseout', swapVideoWithImg);
-
-// var gImgShowing = true;
-
-
-// function swapImgWithVideo() {
-//     console.log('swap image with video v7');
-
-//    if(gImgShowing == true) {
-//     document.getElementById('thumbnail').innerHTML="<video id='myVideo' width='416' height='208' src='images/New_Video416x206.mp4' autoplay></video>";
-//     gImgShowing = false;
-//    }
-
-// }
-
-// function swapVideoWithImg() {
-//     console.log('swap video with image v7');
-
-//     if(gImgShowing == false) {
-//         document.getElementById('thumbnail').innerHTML="<img src='images/test-image.jpeg' alt='The many saints of newark banner'>";
-//         gImgShowing = true;
-//     }
-
-// }
-
-
-// document.getElementsByTagName('video')[0].onended = function() {
-//     this.onload();
-//     this.onplay();
-// };
-
 let imgVidDisplayObj = document.getElementById("imgVidDisplay");
 let videoObj = document.getElementById("myVid");
 let thumbnailObj = document.getElementById("myThumbnail");
@@ -47,9 +11,9 @@ let previewObj = document.getElementById("previewButton");
 imgVidDisplayObj.addEventListener('mouseenter', function (evt) {
   videoObj.play();
   imgVidDisplayObj.style.borderRadius = "10px";
-  previewObj.style.opacity = 1;
-  playObj.style.opacity = 1;
-  plusObj.style.opacity = 1;
+  previewObj.style.opacity = .5;
+  playObj.style.opacity = .5;
+  plusObj.style.opacity = .5;
   shadowObj.style.opacity = 1;
   thumbnailObj.style.opacity = 0;
   wrapperObj.style.transform = "scale(1.2)";
@@ -67,12 +31,37 @@ imgVidDisplayObj.addEventListener('mouseleave', function (evt) {
     descriptionObj.style.opacity = 0;
   }, false);
 
+playObj.addEventListener('mouseenter', function(evt){
+    playObj.style.opacity = 1;
+}, false);
+
+playObj.addEventListener('mouseleave', function(evt) {
+    playObj.style.opacity = .5;
+}, false);
+
+previewObj.addEventListener('mouseenter', function(evt){
+    previewObj.style.opacity = 1;
+}, false);
+
+previewObj.addEventListener('mouseleave', function(evt){
+    previewObj.style.opacity = .5;
+}, false);
+
+plusObj.addEventListener('mouseenter', function(evt){
+    plusObj.style.opacity = 1;
+}, false);
+
+plusObj.addEventListener('mouseleave', function(evt){
+    plusObj.style.opacity = .5;
+}, false);
+
 function createInput(){
     console.log('Added to watch list!');
 }
 
 plusObj.addEventListener('click', createInput);
 
+const videoModal = document.getElementById('modal-video');
 const modal = document.getElementById('modal');
 
 const close = document.getElementsByClassName("toggle-modal")[0];
@@ -83,6 +72,7 @@ previewObj.onclick = function() {
 
 close.onclick = function() {
     modal.style.display = "none";
+    videoModal.pause();
 }
 
 window.onclick = function(event) {

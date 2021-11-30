@@ -14,7 +14,6 @@
             <h1>Final Build</h1>
         </div>
     </div>
-    <!-- <video id="myVideo" src="images/Video_Trailer.mp4"></video> -->
     <div id="wrapper">
         <div id="imgVidDisplay">
             <video id="myVid" src="images/New_Video416x206.mp4" preload loop></video>
@@ -32,30 +31,15 @@
                     impressionable teen into the all-powerful mob boss we’ll later come to know: Tony Soprano. Streaming through Oct. 31.</p>
             </div> 
         </div>
-        
-            <!-- <div class="pic">
-                <div id="preview">
-                    <div id="thumbnail">
-                        <img class="innerimg" src="images/test-image.jpeg" alt="The many saints of newark banner">
-                    </div>
-                </div> -->
-                <!-- <div class="shadow"></div> -->
-                <!-- <div class="btn1">
-                    <img class="button" src="images/Play Button.png" alt="play button">
-                </div>
-                <div class="btn2">
-                    <img class="button" src="images/Plus Button.png" alt="plus button">
-                </div>
-                -->
     </div>
     <div id="disclaimer">
         <!-- NOTE: button encourages user to "interact with document first!!" -->
-        <button>Enable Hover Video Play</button>
+        <button class="necessary">Enable Hover Video Play</button>
     </div>
     <div id="modal" class="modal">
         <div class="modal-content">
             <div>
-                <video preload="metadata" controls>
+                <video id="modal-video" preload="metadata" controls>
                     <source src="images/Final_Video_Small_1.mp4">
                 </video>
             </div>
@@ -65,6 +49,27 @@
     <div class="All">
         <h2>Website: HBO Max</h2>
             <a href="https://play.hbomax.com/page/urn:hbo:page:home" target="_blank">Link to Website</a>
+    </div>
+    <div class="title">
+        <h1>Enable Hover Video Play</h1>
+    </div>
+    <div class="list">
+        <div id="content" class="Ntrig">
+            <h2>Trigger</h2>
+                <p>When user clicks on "Enable Hover Video Play" button</p>
+        </div>
+        <div id="content" class="Nrule">
+            <h2>Rules</h2>
+            <p>When user clicks on this button, enable autoplay of video</p>
+        </div>
+        <div id="content" class="Nfeed">
+            <h2>Feedback</h2>
+            <p>No visible feedback</p>
+        </div>
+        <div id="content" class="Nloop">
+            <h2>Loops & Modes</h2>
+            <p>No loops or  modes for this button</p>
+        </div>
     </div>
     <div class="title">
         <h1>On Hover</h1>
@@ -82,7 +87,7 @@
                     <p>Info text for show fades in</p>
                     <p>Play button and add button fades in</p>
                     <p>Image stays enlarged until user exits hover</p>
-                    <p>Switches from static image to video trailer after a few seconds</p>
+                    <p>Switches from static image to video trailer</p>
                     <p>Video trailer of show plays</p>
                     <p>When user exits hover, video reverts back to image</p>
                     <p>When user exits hover, image goes back to original size</p>
@@ -97,7 +102,7 @@
                     <p>Info text for show fades in</p>
                     <p>Play button and add button fades in</p>
                     <p>Image stays enlarged until user exits hover</p>
-                    <p>Switches from static image to video trailer after a few seconds</p>
+                    <p>Switches from static image to video trailer</p>
                     <p>Video trailer of show plays</p>
                     <p>When user exits hover, video reverts back to image</p>
                     <p>When user exits hover, image goes back to original size</p>
