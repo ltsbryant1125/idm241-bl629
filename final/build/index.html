@@ -22,7 +22,7 @@
             <div id="myThumbnail">
                 <img src="images/test-image.jpeg" alt="thumbnail image">
             </div>
-            <button id="playButton" class="btn1"><a href="https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series"><img src="images/Play Button.png" alt="play button"></a></button>
+            <button id="playButton" class="btn1"><a href="https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series" target="_blank"><img src="images/Play Button.png" alt="play button"></a></button>
             <button id="previewButton" class="btn2"><img src="images/Preview Button.png" alt="preview button"></button>
             <button id="plusButton" class="btn3"><img src="images/Plus Button.png" alt="plus button"></button>
             <div id="descriptionText" class="img_description">
@@ -47,10 +47,20 @@
                     <img class="button" src="images/Plus Button.png" alt="plus button">
                 </div>
                 -->
-    </div>   
+    </div>
     <div id="disclaimer">
         <!-- NOTE: button encourages user to "interact with document first!!" -->
         <button>Enable Hover Video Play</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div>
+                <video preload="metadata" controls>
+                    <source src="images/Final_Video_Small_1.mp4">
+                </video>
+            </div>
+            <button id="btn-modal-close" class="toggle-modal">Close</button>
+        </div>
     </div>
     <div class="All">
         <h2>Website: HBO Max</h2>

@@ -70,4 +70,22 @@ imgVidDisplayObj.addEventListener('mouseleave', function (evt) {
 function createInput(){
     console.log('Added to watch list!');
 }
+
 plusObj.addEventListener('click', createInput);
+
+const modal = document.getElementById('modal');
+
+const close = document.getElementsByClassName("toggle-modal")[0];
+
+previewObj.onclick = function() {
+    modal.style.display = "block";
+}
+
+close.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.targe == modal) {modal.style.display = "none";
+    }
+}
