@@ -270,6 +270,7 @@ li {
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+
 }
 
 #wrapper {
@@ -277,6 +278,8 @@ li {
     grid-gap: 20px;
     grid-template-columns: repeat(1, minmax(100px, 1fr));
     justify-items: center;
+
+    transition: transform .2s 20ms ease-in-out;
 }
   
 #imgVidDisplay {
@@ -294,6 +297,24 @@ li {
 button {
     cursor: pointer;
 }
+
+.necessary {
+    color: black;
+    background-color: gray;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem;
+    opacity: 75%;
+}
+
+.necessary:hover {
+    background-color: #6545df;
+    color: white;
+    opacity: 100%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+}
   
 .modal {
     display: none;
@@ -305,8 +326,16 @@ button {
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0);
+
+    animation-name: animatetop;
+    animation-duration: 0.4s;
 }
 
+@keyframes animatetop {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
 .modal-content {
     background: rgb(158,75,249);
     background: linear-gradient(90deg, rgba(158,75,249,1) 0%, rgba(63,94,251,1) 50%, rgba(165,74,249,1) 100%);

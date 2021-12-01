@@ -76,6 +76,7 @@ close.onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.targe == modal) {modal.style.display = "none";
+    if (event.target == modal) {
+    modal.style.display = "none";
     }
 }
